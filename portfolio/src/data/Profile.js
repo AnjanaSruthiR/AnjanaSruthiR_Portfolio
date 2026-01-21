@@ -3,7 +3,7 @@ export const profile = {
   role: "I design secure, scalable, and interactive cutting-edge applications.",
   status: "Open to Work",
   bio: "I excel at identifying challenges, streamlining processes, and delivering user-centric solutions that drive efficiency. A fun fact about me is, I love dinosaurs and never miss a rewatch of Jurassic Park!",
-  email: "mailto:anjanasruthi2309@gmail.com",
+  email: "anjanasruthi2309@gmail.com",
   img: "../assets/Profile_Photo.jpg",
   social: {
     linkedin: "https://www.linkedin.com/in/anjana-sruthi-ranga-164148211/",

@@ -8,7 +8,7 @@ export const projects = [
     },
     {
       title: 'Patient Management Application',
-      description: 'Built a responsive patient portal with React, Vite, and Tailwind CSS; integrated MongoDB and Okta IAM for secure data management and enhanced patient engagement',
+      description: 'Built a responsive patient portal with React, Vite, and Tailwind CSS; integrated MongoDB and Okta IAM for secure data management',
       image: '../assets/Patient_Management.png',
       technologies: ['React+vite', 'TailwindCSS', 'Node', 'MongoDb', 'Okta', 'IAM'],
       githubLink: 'https://github.com/AnjanaSruthiR/Patient_Management_Dashboards'

@@ -25,4 +25,5 @@ export const skills = [
   { name: "ServiceNow", img: "https://www.vectorlogo.zone/logos/servicenow/servicenow-icon.svg", color: "#81B5A1" },
   { name: "Office 365", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Microsoft_365_%282022%29.svg/512px-Microsoft_365_%282022%29.svg.png", color: "#D83B01" },
   { name: "Excel", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/512px-Microsoft_Excel_2013-2019_logo.svg.png", color: "#217346" },
+  { name: "Power BI", img: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg", color: "#F2C811" },
 ];

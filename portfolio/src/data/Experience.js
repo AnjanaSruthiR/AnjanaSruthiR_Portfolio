@@ -1,23 +1,23 @@
 export const experience = [
   {
     company: "State Street",
-    role: "REACTJS FULL-STACK DEVELOPER",
+    role: "React Full-Stack Developer (Co-op)",
     date: "July 2025 - Dec 2025",
     logo: "../assets/State-street-logo.png",
-    description: "Spearheaded the end-to-end migration of a legacy .NET and VB application to a modern full-stack system using React.js, Spring Boot, and React MUI, ensuring alignment with organizational design and architecture standards. Enhanced performance and user experience by building responsive UI components, optimizing React rendering, and refining SQL queries, reducing load and execution times by up to 90%."
+    description: "Architected the complete modernization of legacy .NET/VB systems into a scalable Full-Stack architecture using React and Spring Boot. Engineered a reusable Component Library with Material UI (MUI) to enforce design consistency across the organization. Optimized React rendering cycles and SQL stored procedures, achieving a 90% reduction in data load times and execution latency."
   },
   {
     company: "Accenture",
-    role: "APPLICATION DEVELOPER",
+    role: "Application Developer",
     date: "Oct 2022 – July 2024",
     logo: "../assets/accenture-icon.png",
-    description: "I orchestrated front-end development for 15 cross-platform apps in 17 languages, ensuring seamless multi-device performance. I designed engaging UI/UX using HTML, CSS, and jQuery—integrating social logins and SSO to maintain brand consistency and code efficiency while coordinating cross-functional testing."
+    description: "Directed the frontend engineering for a global suite of 15 cross-platform applications supporting 17 languages. Designed high-fidelity, responsive UI/UX interfaces and implemented secure Single Sign-On (SSO) strategies. Streamlined the development lifecycle by creating modular codebases, ensuring seamless multi-device performance and brand uniformity across the enterprise."
   },
   {
     company: "Accenture",
-    role: "SECURITY ENGINEER",
+    role: "Security Engineer",
     date: "Oct 2022 – July 2024",
     logo: "../assets/accenture-icon.png",
-    description: "I collaborated with the IAM team to securely integrate 10 client apps into Okta via OIDC. I provisioned user access, configured MFA with Okta Verify, and managed user profiles for enhanced security. I implemented a strategy to manage backlog login incidents, reducing resolution time by 60%."
+    description: "Specialized in Identity & Access Management (IAM), securely integrating 10+ enterprise applications with Okta using OIDC protocols. Strengthened security posture by configuring Multi-Factor Authentication (MFA) and automated user provisioning policies. Revolutionized incident management workflows, reducing backlog resolution times by 60% through strategic process automation."
   }
 ];

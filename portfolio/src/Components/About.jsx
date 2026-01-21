@@ -21,10 +21,10 @@ const About = () => {
   }, []);
 
   return (
-    <section className="py-20 relative z-10">
+    <section className="py-12 relative z-10">
       
-      <div id="experience" className="absolute -top-32 left-0"></div>
-      <div id="education" className="absolute -top-32 left-0"></div>
+      <div id="experience" className="absolute -top-20 left-0"></div>
+      <div id="education" className="absolute -top-20 left-0"></div>
 
       <div className="flex justify-center mb-16" data-aos="fade-up">
         <div className="bg-slate-100 p-1.5 rounded-full inline-flex relative shadow-inner">
@@ -101,7 +101,7 @@ const About = () => {
                        
                        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                           <div>
-                            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">
+                            <div className="text-xs font-bold text-slate-600 uppercase tracking-widest mb-1">
                                 {edu.university}
                             </div>
                             <h3 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
