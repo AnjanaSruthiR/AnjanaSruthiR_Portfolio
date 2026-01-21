@@ -5,27 +5,12 @@ const Contact = () => {
   const [copyStatus, setCopyStatus] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  // --- UPDATED MOUSE TRACKING ---
-  // We now calculate position relative to the section, not the screen
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     setMousePosition({ x, y });
   };
-
-  const testimonials = [
-    {
-      name: "Yogendranath Gujarathi",
-      role: "Senior Manager at Accenture",
-      quote: "I’m delighted to recommend Anjana Sruthi Ranga. I worked closely with her at Accenture, where she excelled as an Application Developer. Anjana consistently showcased strong analytical skills, creativity, and exceptional talent in application design with meticulous attention to detail."
-    },
-    {
-      name: "Praise Shimosha",
-      role: "Consulting Development Analyst at Accenture",
-      quote: "I had the pleasure of working on a project with Anjana for over a year at Accenture... Anjana consistently demonstrated exceptional coding skills and the ability to effectively communicate with stakeholders to resolve issues. She excelled in team collaboration."
-    }
-  ];
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(profile.email);
