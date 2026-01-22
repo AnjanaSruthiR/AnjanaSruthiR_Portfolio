@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, offset: 50 });
+    AOS.init({ duration: 1000, once: true, offset: 10 });
 
     const typed = new Typed(typedEl.current, {
       strings: [
@@ -58,7 +58,7 @@ const App = () => {
     <div className="bg-white text-slate-900 min-h-screen font-sans selection:bg-purple-600 selection:text-white cursor-default overflow-x-hidden">
 
       <div
-        className="fixed w-[500px] h-[500px] bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 rounded-full blur-[100px] pointer-events-none z-0 transition-transform duration-100 ease-out -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"
+        className="fixed w-[500px] h-[500px] bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-300/20 rounded-full blur-[100px] pointer-events-none z-0 transition-transform duration-100 ease-out -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"
         style={{ left: mousePosition.x, top: mousePosition.y }}
       ></div>
 
@@ -183,15 +183,14 @@ const App = () => {
           <About />
         </div>
 
-        <div id="projects" className="bg-slate-50 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-slate-50 to-slate-100 z-0"></div>
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-            <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-[120px] mix-blend-multiply animate-blob"></div>
-            <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-sky-400/20 rounded-full blur-[120px] mix-blend-multiply animate-blob animation-delay-4000"></div>
-          </div>
+        <div id="projects" className="bg-White-100 relative overflow-hidden">
+
+          <div className="absolute inset-0 bg-gradient-to-b from-sky-20 via-sky-50 to-sky-100 z-0"></div>
+
           <div className="absolute inset-0 z-0 opacity-70">
             <ParticleBackground />
           </div>
+
           <div className="max-w-[1200px] mx-auto px-6 py-20 relative z-10">
             <Projects />
           </div>

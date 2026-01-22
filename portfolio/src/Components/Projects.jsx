@@ -36,6 +36,7 @@ const Projects = () => {
             className="group relative aspect-video w-full rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-default"
             data-aos="fade-up"
             data-aos-delay={idx * 100}
+            data-aos-offset="0"
           >
             
             <div className="absolute inset-0 w-full h-full bg-slate-200">
