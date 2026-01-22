@@ -183,7 +183,7 @@ const App = () => {
           <About />
         </div>
 
-        <div id="projects" className="bg-White-100 relative overflow-hidden">
+        <div id="projects" className="bg-white-50 relative overflow-hidden border-y border-slate-200">
 
           <div className="absolute inset-0 bg-gradient-to-b from-sky-20 via-sky-50 to-sky-100 z-0"></div>
 

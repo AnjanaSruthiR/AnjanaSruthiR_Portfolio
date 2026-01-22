@@ -14,10 +14,10 @@ const ParticleBackground = () => {
     const mousePushForce = 5; 
     
     const particleColors = [
-      '#a855f7',
-      '#d8b4fe',
-      '#c084fc',
-      '#e879f9'
+      '#a046f5ff',
+      '#bf8cf6ff',
+      '#a860f0ff',
+      '#853b91ff'
     ]; 
 
     let mouse = { x: null, y: null };
