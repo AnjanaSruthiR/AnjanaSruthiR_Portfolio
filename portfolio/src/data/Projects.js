@@ -3,6 +3,9 @@ import patientMgmtImg from '../assets/Patient_Management.png';
 import hospitalMgmtImg from '../assets/Hospital_Management.png';
 import contactFormImg from '../assets/Contact_Form.png';
 import carRentalImg from '../assets/Car_Rental_System.png';
+import ReadyAIImg from '../assets/ReadyAI.png';
+import WhoopImg from '../assets/Whoop.png';
+import CartImg from '../assets/Cart.png';
 
 export const projects = [
   {
@@ -39,5 +42,26 @@ export const projects = [
       image: carRentalImg,
       technologies: ['MySQL', 'Docker', 'JavaSwing', 'Power BI'],
       githubLink: 'https://github.com/AnjanaSruthiR/Car-Rental-System---Database-Management'
+    },
+    {
+      title: 'Prototype_Personal AI Interview Coach',
+      description: 'ReadyAI is an innovative AI-powered platform meticulously designed for comprehensive interview preparation. It leverages structured self-assessment techniques to provide unparalleled feedback, ensuring users are thoroughly prepared for their next big opportunity.',
+      image: ReadyAIImg,
+      technologies: ['Moqups', 'UI/UX Design', 'User Research'],
+      githubLink: 'https://github.com/AnjanaSruthiR/Prototype_Personal-AI-Interview-Coach'
+    },
+    {
+      title: 'Whoop Wireframing Project',
+      description: 'UX Case Study & Low-Fidelity Wireframing.',
+      image: WhoopImg,
+      technologies: ['Balsamiq'],
+      githubLink: 'https://github.com/AnjanaSruthiR/Whoop-Wireframing-Project'
+    },
+    {
+      title: 'Shopping Cart UX Improvements',
+      description: 'Refining the Checkout Experience: Leveraging Behavioral Design and Financial Transparency to Minimize Cart Abandonment',
+      image: CartImg,
+      technologies: ['Figma'],
+      githubLink: 'https://github.com/AnjanaSruthiR/Shopping_Cart_UX_Improvements_Figma'
     }
   ];
