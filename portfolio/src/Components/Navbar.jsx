@@ -1,17 +1,50 @@
 import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { profile } from '../data/Profile';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = [
-    { name: 'About', href: '#home' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact ME', href: '#contact' },
+    { name: 'About', id: 'home' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Education', id: 'education' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact ME', id: 'contact' },
   ];
+
+  const handleNavClick = (e, id) => {
+  e.preventDefault();
+  setIsOpen(false); 
+
+  // Function to dispatch the event and scroll
+  const executeScrollAndToggle = () => {
+    // 1. Dispatch custom event to trigger tab change in About.jsx
+    if (id === 'education' || id === 'experience') {
+      window.dispatchEvent(new CustomEvent('changeTab', { detail: id }));
+    }
+
+    // 2. Perform the scroll
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  if (location.pathname !== '/') {
+    // If not on home page, go home first, then wait for mount
+    navigate('/');
+    setTimeout(() => {
+      executeScrollAndToggle();
+    }, 100);
+  } else {
+    // If already on home, execute immediately
+    executeScrollAndToggle();
+  }
+};
 
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-2xl px-2">
@@ -30,14 +63,14 @@ const Navbar = () => {
 
         <div className="hidden md:flex gap-5">
           {navLinks.map((item) => (
-            <a
+            <button
               key={item.name}
-              href={item.href}
+              onClick={(e) => handleNavClick(e, item.id)}
               className="text-xs font-bold text-slate-500 hover:text-black uppercase tracking-wide transition-colors relative group"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all group-hover:w-full"></span>
-            </a>
+            </button>
           ))}
         </div>
 
@@ -46,6 +79,7 @@ const Navbar = () => {
           <a
             href="https://drive.google.com/file/d/1vpippwmpD3VOb5BxocZjT4XQ09_Yd0Yk/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
             className="bg-black text-white text-[10px] md:text-xs font-bold px-5 py-2.5 rounded-full hover:bg-slate-800 transition-transform hover:scale-105 shadow-lg shadow-slate-900/20 whitespace-nowrap"
           >
             RESUME
@@ -53,19 +87,19 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full mt-3 px-2 md:hidden">
           <div className="bg-white/90 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-2 flex flex-col animate-fade-in-down">
             {navLinks.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="text-slate-700 font-semibold text-sm py-3 px-4 rounded-xl hover:bg-slate-100 transition-colors flex justify-between items-center"
+                onClick={(e) => handleNavClick(e, item.id)}
+                className="text-slate-700 font-semibold text-sm py-3 px-4 rounded-xl hover:bg-slate-100 transition-colors flex justify-between items-center text-left"
               >
                 {item.name}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-slate-300"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
-              </a>
+              </button>
             ))}
           </div>
         </div>
