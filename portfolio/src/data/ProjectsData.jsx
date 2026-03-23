@@ -3,6 +3,7 @@ import portfolioImg from '../assets/Portfolio_Project.png';
 import patientMgmtImg from '../assets/Patient_Management.png';
 import hospitalMgmtImg from '../assets/Hospital_Management.png';
 import contactFormImg from '../assets/Contact_Form.png';
+import VibeCheckImg from '../assets/VibeCheck.png';
 import carRentalImg from '../assets/Car_Rental_System.png';
 import ReadyAIImg from '../assets/ReadyAI.png';
 import WhoopImg from '../assets/Whoop.png';
@@ -307,6 +308,138 @@ export const projects = [
       )
     },
     {
+      id: "HighFidelityFigmaPrototype",
+      title: 'VibeCheck - High-Fidelity-Figma-Prototype',
+      description: 'VibeCheck is a high-fidelity UI/UX design and interactive prototype for a modern event discovery platform. It allows users to find local activities based on their current mood, seamlessly book tickets, and share post-event memories in a collaborative gallery.',
+      image: VibeCheckImg,
+      technologies: ['Figma', 'UI/UX Design', 'High-Fidelity Prototyping'],
+      date: '2026',
+      role: 'UI/UX Designer',
+      liveLink: 'https://www.figma.com/proto/XiLxwIc0f6BdpHsUla3fFa/VibeCheck_High-Fedility_Figma?node-id=0-1&t=faJdErICQHr0DUn8-1',
+      githubLink: 'https://github.com/AnjanaSruthiR/High-Fidelity-Figma-Prototype',
+      richContent: (
+        <div className="space-y-16 text-slate-600 font-light text-lg leading-relaxed">
+          
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 flex items-center gap-3">
+                <span className="text-3xl">⚠️</span> The Problem
+              </h3>
+              <ul className="space-y-3 text-base text-slate-600">
+                <li className="flex gap-3"><span className="text-pink-500 mt-1">▹</span> Traditional event apps rely on rigid, overwhelming filters (like dates or broad categories).</li>
+                <li className="flex gap-3"><span className="text-pink-500 mt-1">▹</span> Users struggle to find spontaneous activities that actually match their current energy level or vibe.</li>
+                <li className="flex gap-3"><span className="text-pink-500 mt-1">▹</span> Apps lose user retention immediately after the ticket is scanned at the door.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 flex items-center gap-3">
+                <span className="text-3xl">💡</span> The Solution
+              </h3>
+              <ul className="space-y-3 text-base text-slate-600">
+                <li className="flex gap-3"><span className="text-cyan-500 mt-1">▹</span> Introduces "Mood-Based" discovery chips (e.g., Energetic, Chill, Creative) for personalized feeds.</li>
+                <li className="flex gap-3"><span className="text-cyan-500 mt-1">▹</span> Features a seamless, multi-step checkout process with real-time dynamic pricing.</li>
+                <li className="flex gap-3"><span className="text-cyan-500 mt-1">▹</span> Retains users post-event by converting digital tickets into collaborative community photo galleries.</li>
+              </ul>
+            </div>
+          </section>
+  
+          <section>
+            <h3 className="text-2xl font-black text-slate-900 mb-6 flex items-center gap-3">
+              <span className="text-3xl">✨</span> Platform Features
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                <strong className="text-slate-900 block mb-4 font-bold text-lg flex items-center gap-2">🎛️ 1. Mood-Based Feed</strong>
+                <ul className="space-y-3 text-sm">
+                  <li><strong>Auto Layout Chips:</strong> Horizontally scrollable categories that dynamically filter the feed.</li>
+                  <li><strong>Rich Media Cards:</strong> High-quality imagery with clear price, date, and location tagging.</li>
+                  <li><strong>Global Search:</strong> Integrated search layer to find specific hosts or event titles.</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                <strong className="text-slate-900 block mb-4 font-bold text-lg flex items-center gap-2">🎟️ 2. Dynamic Ticketing</strong>
+                <ul className="space-y-3 text-sm">
+                  <li><strong>Quantity Selection:</strong> Interactive counters that calculate base prices and taxes instantly.</li>
+                  <li><strong>Payment Simulator:</strong> Realistic checkout forms with toggles for Credit Card, Apple Pay, and PayPal.</li>
+                  <li><strong>Digital QR Generation:</strong> Instant ticket generation stored directly in the user's wallet tab.</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                <strong className="text-slate-900 block mb-4 font-bold text-lg flex items-center gap-2">📸 3. Post-Event Galleries</strong>
+                <ul className="space-y-3 text-sm">
+                  <li><strong>Ticket Transformation:</strong> 24 hours after an event, tickets convert into shared photo spaces.</li>
+                  <li><strong>Community Uploads:</strong> Bottom-sheet modal integration mimicking native camera roll access.</li>
+                  <li><strong>Grid Layouts:</strong> Clean, masonry-style photo grids for high-fidelity aesthetics.</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
+                <strong className="text-slate-900 block mb-4 font-bold text-lg flex items-center gap-2">🎤 4. Host a Vibe (Creator Portal)</strong>
+                <ul className="space-y-3 text-sm">
+                  <li><strong>Multi-Step Form:</strong> Intuitive event creation separating details, pricing, and media.</li>
+                  <li><strong>Live Previews:</strong> Real-time component updates showing creators exactly how their card will look.</li>
+                  <li><strong>Global Feed Injection:</strong> Newly published events instantly populate the discovery feed.</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+  
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 mb-6 flex items-center gap-3">
+                <span className="text-3xl">🎨</span> Design System
+              </h3>
+              <div className="space-y-4 text-sm bg-white border border-slate-200 p-6 rounded-2xl shadow-sm">
+                <div className="flex justify-between border-b border-slate-100 pb-2">
+                  <span className="font-bold text-slate-400 uppercase tracking-wider text-xs">Figma Features</span>
+                  <span className="text-slate-800 font-medium">Auto Layouts, Components, Variants</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-100 pb-2">
+                  <span className="font-bold text-slate-400 uppercase tracking-wider text-xs">Primary Color</span>
+                  <span className="font-bold text-[#9747FF]">Vibrant Purple (#9747FF)</span>
+                </div>
+                <div className="flex justify-between border-b border-slate-100 pb-2">
+                  <span className="font-bold text-slate-400 uppercase tracking-wider text-xs">Secondary Color</span>
+                  <span className="font-bold text-slate-900">Dark Navy (#131B2F)</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-bold text-slate-400 uppercase tracking-wider text-xs">Theme Style</span>
+                  <span className="text-slate-800 font-medium">Dark Mode Optimized</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 mb-6 flex items-center gap-3">
+                <span className="text-3xl">🗺️</span> Major User Flows
+              </h3>
+              <div className="space-y-4 text-sm bg-white border border-slate-200 p-6 rounded-2xl shadow-sm">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5">1</div>
+                  <div>
+                    <strong className="text-slate-900 block">Discovery to Booking</strong>
+                    <span className="text-slate-500">Filters feed by mood ➔ Selects event ➔ Selects ticket quantity ➔ Processes payment via modal.</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 mt-4">
+                  <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5">2</div>
+                  <div>
+                    <strong className="text-slate-900 block">Creator Publishing</strong>
+                    <span className="text-slate-500">Opens Host portal ➔ Inputs event metadata ➔ Reviews live component preview ➔ Publishes to feed.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+        </div>
+      )
+    },
+    {
       id: "CarRentalSystem",
       title: 'Car Rental System',
       description: 'Developed a robust relational database managing vehicles, customers, bookings, payments, and maintenance schedules, featuring an intuitive GUI and real-time PowerBI analytics.',
@@ -585,7 +718,6 @@ export const projects = [
       richContent: (
         <div className="space-y-16 text-slate-600 font-light text-lg leading-relaxed">
           
-          {/* Overview & Challenge Section */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 flex items-center gap-3">
